@@ -21,8 +21,20 @@ button {
     padding: 0 15px;
     margin: 0 auto;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* ================HEADER STYLES=============== */
 .page-header{
@@ -99,10 +111,11 @@ h1,h2,h3,h4,h5,h6{
     padding: 24px 0;
     margin-right: 76px;
 }
-/* ================/HEADER STYLES=============== */
+
 /* ================HERO STYLES=============== */
 .first-sec{
     background: #2e2f42;
+    padding:188px 0;
 }
 .lead-ins {
     font-weight: 700;
@@ -111,6 +124,10 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .butt-order {
     font-weight: 500;
@@ -119,13 +136,23 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4D5AE5;
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height:56px;
+    border-radius: 4px;
+    border: none;
 }
 .butt-order:hover,
 .butt-order:focus{
     background-color: #404BBF;
 }
 
-
+/*=================== benef=================== */
+.benef{
+    padding: 120px 0;
+}
 .benef-ins {
     font-weight: 500;
     font-size: 20px;
@@ -144,9 +171,25 @@ h1,h2,h3,h4,h5,h6{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
+}
+.benef-list{
+    display: flex;
+    gap: 24px;
+}
+.benef-descr{
+    width: calc(( 100% - 72px ) / 4);
+} 
+
+/* ==============team============== */
+.team-lead-list{
+    display: flex;
+    gap: 24px;
 }
 .team-list{
     background-color: #FFFFFF;
+    width: calc(( 100% - 72px ) / 4);
+    border-radius: 0 0 4px 4px;
 }
 .team-item{
     font-weight: 700;
@@ -155,7 +198,8 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .team-title {
     font-weight: 500;
@@ -164,6 +208,9 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    
 }
 .team-name {
     font-weight: 400;
@@ -171,9 +218,20 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 32px;
 }
 .team {
     background: #f4f4fd;
+    padding: 120px 0;
+}
+/* ===============PORTFOLIO ============*/
+.portfolio{
+    padding: 120px 0;
+}
+.port-lead-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .port-item{
     font-weight: 700;
@@ -183,6 +241,13 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.port-list{
+    width: calc(( 100% - 48px ) / 3);
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 .port-ins{
     font-weight: 500;
@@ -190,12 +255,17 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
 }
 .port-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    margin-left: 16px;
 }
 
 /* ==========FOOTER========== */
@@ -210,6 +280,7 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 100px;
 }
 .footer-part {
     font-family: "Raleway", sans-serif;
@@ -226,4 +297,8 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+}
+.end{
+    padding: 100px 0;
 }
