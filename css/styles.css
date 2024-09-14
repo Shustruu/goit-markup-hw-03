@@ -286,6 +286,8 @@ footer {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-part {
     font-family: "Raleway", sans-serif;
