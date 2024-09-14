@@ -15,6 +15,9 @@ a {
 button {
     cursor: pointer;
 }
+img{
+    display: block;
+}
 /* common */
 .container{
     max-width: 1158px;
@@ -124,7 +127,7 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -136,7 +139,7 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4D5AE5;
-    width: 169px;
+    min-width: 169px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -153,12 +156,14 @@ h1,h2,h3,h4,h5,h6,p{
 .benef{
     padding: 120px 0;
 }
+
 .benef-ins {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .benef-inf {
     font-weight: 400;
@@ -182,6 +187,9 @@ h1,h2,h3,h4,h5,h6,p{
 } 
 
 /* ==============team============== */
+.team-inf{
+    padding: 32px 0;
+}
 .team-lead-list{
     display: flex;
     gap: 24px;
@@ -208,9 +216,7 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 8px;
-    
 }
 .team-name {
     font-weight: 400;
@@ -218,7 +224,6 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 32px;
 }
 .team {
     background: #f4f4fd;
